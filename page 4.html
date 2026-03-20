@@ -32,7 +32,7 @@
                         <a class="nav-link text-white-50" href="#">Контакты</a>
                     </li>
                 </ul>
-            <!-- Блок с пользователем (внизу меню) -->
+                <!-- Блок с пользователем (внизу меню) -->
                 <div class="position-absolute bottom-0 w-100 p-3 border-top border-secondary">
                     <div class="dropdown">
                         <!-- Аватар и имя (кликабельно) -->
@@ -74,17 +74,17 @@
         <div class="col-md-6 mb-4">
             <div class="card bg-secondary text-white">
                 <div class="card-body">
-                    <form>
+                    <form action="/submit" method="POST">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Имя">
+                             <input type="text" name="name" class="form-control" placeholder="Имя">
+                            </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <textarea name="message" class="form-control" placeholder="Сообщение" rows="3"></textarea>
                         </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" placeholder="Сообщение" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                            <button type="submit" class="btn btn-primary w-100">Отправить</button>
                     </form>
                 </div>
             </div>
